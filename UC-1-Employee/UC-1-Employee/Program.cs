@@ -4,15 +4,20 @@
     {
         static void Main(string[] args)
         {
-            int IS_FULLTIME = 1;
+            int IS_FULLTIME = 2;
+            int IS_PARTTIME = 1;
             int EMP_RATE_PER_HR = 20;
             int emphrs = 0;
             int empwage = 0;
             Random random = new Random();
-            int empCheck = random.Next(0, 2);
+            int empCheck = random.Next(0, 3);
             if (empCheck == IS_FULLTIME)
             {
                 emphrs = 8;
+            }
+            else if (empCheck == IS_PARTTIME)
+            {
+                emphrs = 4;
             }
             else
             {
